@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- ===== عنوان الصفحة ===== -->
+  <title>Hussein Mohamed — Shopify Developer &amp; Designer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- Scanline effect -->
+  <div class="scanline"></div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav>
+    <!-- ===== الاسم المختصر في الـ nav ===== -->
+    <div class="nav-logo">HUSSEIN.USD</div>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- hamburger — mobile only -->
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- mobile overlay -->
+  <div class="nav-overlay" id="navOverlay"></div>
+  <!-- mobile drawer -->
+  <div class="nav-drawer" id="navDrawer">
+    <a href="#about"    class="drawer-link">About</a>
+    <a href="#skills"   class="drawer-link">Skills</a>
+    <a href="#projects" class="drawer-link">Work</a>
+    <a href="#contact"  class="drawer-link">Contact</a>
+  </div>
+
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <section id="hero">
+
+    <!-- ===== الـ status بتاعك ===== -->
+    <div class="hero-eyebrow">
+      Available for work &nbsp;·&nbsp; Cairo, Egypt
+    </div>
+
+    <!-- ===== اسمك — السطر الثاني بيطلع بلون var(--accent) من الـ CSS ===== -->
+    <h1 class="hero-name">
+      <span>Hussein</span>
+      <span>Mohamed</span>
+    </h1>
+
+    <!-- ===== مسماك الوظيفي ===== -->
+    <p class="hero-title">Shopify Developer &amp; Designer</p>
+
+    <!-- ===== وصف قصير عنك ===== -->
+    <p class="hero-bio">
+      I build high-converting Shopify stores that merge clean code with sharp design.
+      From custom themes to full brand experiences — built for the future.
+    </p>
+
+    <div class="hero-cta">
+      <!-- ===== CTA الرئيسي ===== -->
+      <a href="#projects" class="btn-primary">View My Work <span>→</span></a>
+      <!-- ===== CTA الثاني ===== -->
+      <a href="#contact" class="btn-secondary">Let's Talk</a>
+    </div>
+
+    <!-- ===== الإحصائيات — عدّل الأرقام هنا ===== -->
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-number">2<sup>+</sup></div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">8<sup>+</sup></div>
+        <div class="stat-label">Stores Launched</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">98<sup>%</sup></div>
+        <div class="stat-label">Client Satisfaction</div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ============================================================
+       ABOUT / EXPERIENCE SECTION
+       ============================================================ -->
+  <section id="about">
+    <div class="section-label">About Me</div>
+
+    <div class="about-grid">
+
+      <div class="reveal">
+        <!-- ===== عنوان الـ about ===== -->
+        <h2 class="about-heading">
+          Crafting stores<br/>that <em>actually</em><br/>convert.
+        </h2>
+        <!-- ===== الفقرات التعريفية ===== -->
+        <p class="about-text">
+          With over 2 years deep in the Shopify ecosystem, I specialize in building
+          custom themes and pixel-perfect storefronts that perform as good as they look.
+        </p>
+        <p class="about-text">
+          My work sits at the intersection of development precision and brand-forward design —
+          every store I ship is built to grow.
+        </p>
+      </div>
+
+      <div class="reveal" style="transition-delay:0.15s">
+        <!-- ===== Timeline الخبرة — عدّل كل item هنا ===== -->
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="tl-year">2022 — NOW</div>
+            <div>
+              <div class="tl-role">Senior Shopify Developer</div>
+              <!-- ===== اسم الشركة / فريلانس ===== -->
+              <div class="tl-company">Freelance / Agency</div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="tl-year">2020 — 2022</div>
+            <div>
+              <div class="tl-role">Shopify Theme Designer</div>
+              <!-- ===== اسم الشركة ===== -->
+              <div class="tl-company">E-Commerce Agency</div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="tl-year">2019 — 2020</div>
+            <div>
+              <div class="tl-role">Frontend Developer</div>
+              <!-- ===== اسم الشركة ===== -->
+              <div class="tl-company">Tech Startup</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS / TOOLS SECTION
+       ============================================================ -->
+  <section id="skills">
+    <div class="section-label">Tools &amp; Skills</div>
+
+    <!-- ===== عنوان السكيلز ===== -->
+    <h2 class="skills-heading reveal">My Stack</h2>
+
+    <!-- ===== الأدوات — عدّل الأسماء والإيموجي هنا ===== -->
+    <div class="tools-grid reveal">
+      <div class="tool-card"><span class="tool-icon">🛍</span> Shopify</div>
+      <div class="tool-card"><span class="tool-icon">🎨</span> Liquid</div>
+      <div class="tool-card"><span class="tool-icon">⚡</span> JavaScript</div>
+      <div class="tool-card"><span class="tool-icon">🎯</span> CSS / SCSS</div>
+      <div class="tool-card"><span class="tool-icon">🖼</span> Figma</div>
+      <div class="tool-card"><span class="tool-icon">🔧</span> Theme Kit</div>
+      <div class="tool-card"><span class="tool-icon">📊</span> Analytics</div>
+      <div class="tool-card"><span class="tool-icon">💳</span> Payments</div>
+      <div class="tool-card"><span class="tool-icon">🌐</span> Headless</div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS SECTION
+       ============================================================ -->
+  <section id="projects">
+    <div class="section-label">Selected Work</div>
+
+    <!-- ===== عنوان المشاريع ===== -->
+    <h2 class="projects-heading reveal">Featured Projects</h2>
+
+    <div class="projects-list">
+
+      <!-- ===== مشروع ١ — عدّل الاسم والوصف والتاجز والـ href ===== -->
+      <a href="#" class="project-card reveal">
+        <div class="project-num">01</div>
+        <div class="project-info">
+          <div class="project-name">Project Name Here</div>
+          <div class="project-desc">
+            Custom Shopify theme with advanced filtering, cart animations, and 3× conversion rate improvement.
+          </div>
+        </div>
+        <div class="project-tags">
+          <span class="tag">Shopify</span>
+          <span class="tag">Liquid</span>
+          <span class="tag">Design</span>
+        </div>
+      </a>
+
+      <!-- ===== مشروع ٢ ===== -->
+      <a href="#" class="project-card reveal" style="transition-delay:0.1s">
+        <div class="project-num">02</div>
+        <div class="project-info">
+          <div class="project-name">Project Name Here</div>
+          <div class="project-desc">
+            Headless Shopify storefront with blazing fast load times and custom checkout experience.
+          </div>
+        </div>
+        <div class="project-tags">
+          <span class="tag">Hydrogen</span>
+          <span class="tag">React</span>
+          <span class="tag">API</span>
+        </div>
+      </a>
+
+      <!-- ===== مشروع ٣ ===== -->
+      <a href="#" class="project-card reveal" style="transition-delay:0.2s">
+        <div class="project-num">03</div>
+        <div class="project-info">
+          <div class="project-name">Project Name Here</div>
+          <div class="project-desc">
+            Full brand identity + Shopify store build for a luxury fashion brand. Zero to launch in 3 weeks.
+          </div>
+        </div>
+        <div class="project-tags">
+          <span class="tag">Branding</span>
+          <span class="tag">Figma</span>
+          <span class="tag">Shopify</span>
+        </div>
+      </a>
+
+      <!-- ===== مشروع ٤ ===== -->
+      <a href="#" class="project-card reveal" style="transition-delay:0.3s">
+        <div class="project-num">04</div>
+        <div class="project-info">
+          <div class="project-name">Project Name Here</div>
+          <div class="project-desc">
+            Subscription-based Shopify store with custom app integrations and automated email flows.
+          </div>
+        </div>
+        <div class="project-tags">
+          <span class="tag">Subscriptions</span>
+          <span class="tag">Klaviyo</span>
+          <span class="tag">Apps</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT / CTA SECTION
+       ============================================================ -->
+  <section id="contact">
+
+    <!-- ===== النص فوق الـ CTA ===== -->
+    <p class="contact-eyebrow">Ready to build something?</p>
+
+    <!-- ===== الـ heading الكبير ===== -->
+    <h2 class="contact-heading reveal">
+      Let's build your<br/><em>next store.</em>
+    </h2>
+
+    <!-- ===== إيميلك ===== -->
+    <p class="contact-email">husseinmohamedd2007@email.com</p>
+
+    <div class="contact-cta-group reveal">
+      <!-- ===== CTA الرئيسي ===== -->
+      <a href="mailto:husseinmohamedd2007@email.com" class="btn-primary">
+        Start a Project →
+      </a>
+      <!-- ===== CV link ===== -->
+      <a href="#" class="btn-secondary">View CV</a>
+    </div>
+
+    <!-- ===== السوشيال ميديا ===== -->
+    <div class="contact-socials reveal">
+      <a href="https://www.instagram.com/hussein.usd?igsh=MTN6cGUyc2ljdG52cA%3D%3D&utm_source=qr" class="social-link">Instagram</a>
+      <a href="https://github.com/hussain-mohamed" class="social-link">GitHub</a>
+      <a href="https://www.upwork.com/freelancers/~01e43e98b0e14f9265?mp_source=share" class="social-link">Upwork</a>
+    </div>
+
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <!-- ===== عدّل اسمك وسنة النشر ===== -->
+    <p class="footer-copy">© 2025 <span>HUSSEIN.USD</span> — All rights reserved.</p>
+    <p class="footer-copy">Shopify Developer &amp; Designer</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+
+</body>
+</html>
